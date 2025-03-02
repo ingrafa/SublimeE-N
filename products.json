@@ -1,0 +1,23 @@
+{
+    "products": [
+      {
+        "name": "Martillo de Acero [Marca]",
+        "price": "10 USD",
+        "description": "Martillo de acero forjado, ergonómico y resistente, ideal para trabajos de carpintería.",
+        "image": "images/producto1.jpg"
+      },
+      {
+        "name": "Pintura Acrílica Blanca [Marca]",
+        "price": "5 USD",
+        "description": "Pintura de alta cobertura, fácil de aplicar y de secado rápido.",
+        "image": "images/producto2.jpg"
+      },
+      {
+        "name": "Taladro Eléctrico [Marca]",
+        "price": "50 USD",
+        "description": "Taladro eléctrico con varias velocidades, ideal para perforaciones en madera y metal.",
+        "image": "images/producto3.jpg"
+      }
+    ]
+  }
+  

@@ -1,0 +1,30 @@
+[
+    {
+        "src": "images/Taza1.jpg",
+        "alt": "Taza Personalizada"
+    },
+    
+    
+    {
+        "src": "images/camiseta.png",
+        "alt": "Camiseta Personalizada"
+    },
+    
+    {
+        "src": "images/gorra1.jpg",
+        "alt": "Gorra Personalizada"
+    },
+    {
+        "src": "images/Taza3.jpg",
+        "alt": "Taza Personalizada"
+    },
+    
+    {
+        "src": "images/gorra2.jpg",
+        "alt": "Taza Deportiva"
+    },
+    {
+        "src": "images/gorra3.jpg",
+        "alt": "Camiseta Estilo"
+    }
+]

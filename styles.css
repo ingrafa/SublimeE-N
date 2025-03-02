@@ -1,0 +1,378 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #1f1f1f, #3b3b3b);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Barra de Navegación */
+header {
+    background-color: #212121;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5722;
+}
+
+/* Sección de Bienvenida */
+.home-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #333;
+}
+
+.home-cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/logo.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.home-cover-image h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+.home-cover-image p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Botón para explorar los servicios */
+.explore-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #e61991;
+}
+
+/* Animación para el fade-in del título */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos de los Servicios */
+#services h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #22aeff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 2s ease-out;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para los elementos del servicio */
+.service-item {
+    margin: 20px;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    opacity: 0;
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+.service-item h3 {
+    font-size: 2rem;
+    color: #ff229c;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    animation: textGlow 1.5s ease-in-out infinite alternate;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 5px #ff22aa, 0 0 10px #ff5722, 0 0 15px #080808;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff5722, 0 0 30px #50cc0850, 0 0 40px #227aff;
+    }
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    background: #ff5722;
+    color: #fff;
+}
+
+/* Galería */
+#portfolio {
+    padding: 60px 20px;
+    text-align: center;
+    background: #212121;
+}
+
+#portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ff5722;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonios */
+#testimonials {
+    padding: 60px 20px;
+    background: #333;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ff5722;
+}
+
+.testimonial {
+    margin: 30px auto;
+    max-width: 700px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial span {
+    font-weight: bold;
+}
+
+/* Contacto */
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: #212121;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ff5722;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #333;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #444;
+    color: #fff;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background: #e64a19;
+}
+
+/* Mapa de Ubicación */
+.map-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+/* Redes Sociales */
+#social-media {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#social-media h2 {
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #22aeff;
+}
+
+.social-icon i {
+    font-size: 2rem;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #212121;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+/* Estilos del pie de página */
+footer {
+    background-color: #212121;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 5px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+footer a {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #e64a19;
+}
